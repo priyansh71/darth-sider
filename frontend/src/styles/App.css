@@ -1,0 +1,371 @@
+body {
+	background-color: rgb(28, 2, 2);
+}
+.App {
+	height: 100vh;
+	text-align: center;
+	color: white;
+}
+
+p {
+	margin: 0;
+}
+
+.container {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.header-container {
+	padding-top: 30px;
+}
+
+header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 5px;
+}
+
+.title {
+	margin: 0px 20px;
+	font-size: 40px;
+	font-weight: bold;
+	color: white;
+	font-family: "Didact Gothic", sans-serif;
+}
+
+.subtitle {
+	font-size: 26px;
+	margin: 20px;
+	font-family: 'Montserrat';
+	color: white;
+}
+
+.left {
+	margin-left: 10%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+}
+
+.right {
+	display: flex;
+	border-radius: 40px;
+	border-color: #6b3535;
+	border-width: 2px;
+	border-style: solid;
+	padding: 12px 20px;
+	height: 99%;
+	margin-right: 10%;
+	margin-top: 10px;
+}
+
+.right p {
+	font-family: "Didact Gothic", sans-serif;
+	letter-spacing: 0.1px;
+	font-size: large;
+}
+
+.right img {
+	padding-top: 3px;
+	width: 23px;
+	height: 20px;
+}
+
+.content-container {
+	background-color: #a200d6;
+}
+
+#vow{
+	margin-top: 10px;
+	font-family: 'Didact Gothic';
+	font-size: large;
+
+}
+
+label{
+	font-family: 'Didact Gothic';
+	font-size: 22px;
+	font-weight: bolder;
+	margin: 10px;
+	text-align: left;
+}
+
+.cta-button {
+	height: 45px;
+	border: 0;
+	width: auto;
+	padding-left: 40px;
+	padding-right: 40px;
+	border-radius: 10px;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: "Montserrat";
+	letter-spacing: 0.5px;
+	color: white;
+}
+
+.connect-wallet-container {
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	font-size: large;
+	max-width: 550px;
+	font-family: "Montserrat", sans-serif;
+}
+
+.connect-wallet-container img {
+	padding-bottom: 20px;
+}
+
+.connect-wallet-button {
+	background-image: linear-gradient(
+		to right,
+		#1d1b1b 0%,
+		#272322 0%,
+		#3b1b18 22%,
+		#422424 51%,
+		#5f0a0a 78%,
+		#7f0404 100%
+	);
+	background-size: 200% 200%;
+	animation: gradient-animation 4s ease infinite;
+}
+
+.mint-button {
+	background: -webkit-linear-gradient(left, #7f0404, #422424);
+	font-size: 17px;
+	background-size: 200% 200%;
+	animation: gradient-animation 4s ease infinite;
+	font-family: "Quicksand", sans-serif;
+	margin: 20px 10px;
+	border-radius: 10px;
+	padding: 0px 2rem;
+}
+
+.mint-button:disabled {
+	background: #4c0303;
+	color: rgb(209, 209, 209);
+	cursor: not-allowed;
+}
+
+.mint-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.edit-button {
+	border-radius: 50%;
+	cursor: pointer;
+	margin-left: 3px;
+	top: 20px;
+	border: 0px;
+	font-size: 12px;
+	background-color: transparent;
+}
+
+
+.footer-container {
+	position: absolute;
+	bottom: 0;
+	right: 20px;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 10px;
+	text-decoration: none;
+	display: flex;
+	flex-direction: row;
+}
+
+.twitter-logo {
+	width: 35px;
+}
+
+.footer-text {
+	color: white;
+	font-size: 19px;
+	font-weight: bold;
+	text-decoration: none;
+	font-family: 'Didact Gothic';
+}
+
+.form-container {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+input {
+	border: 0;
+	border-radius: 12px;
+	background-color: black;
+	color: white;
+	font-size: 22px;
+	width: 300px;
+	margin-bottom: 10px;
+	padding: 10px 20px;
+	text-align: center;
+	font-family: "Didact Gothic", sans-serif;
+}
+
+input::placeholder {
+	color: gray;
+	letter-spacing: 0.4px;
+	font-family: "Didact Gothic", sans-serif;
+}
+
+input:focus {
+	outline: none;
+	font-family: "Didact Gothic", sans-serif;
+}
+
+textarea {
+	border: 0;
+	border-radius: 12px;
+	background-color: black;
+	color: white;
+	font-size: 22px;
+	width: 400px;
+	height: 150px;
+	font-family: "Didact Gothic", sans-serif;
+	margin-bottom: 10px;
+	padding: 20px;
+	text-align: left;
+}
+
+textarea::placeholder {
+	letter-spacing: 0.6px;
+	color: gray;
+}
+
+#caption {
+	font-family: "Montserrat", sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #d9d9d9;
+	margin: 10px 0;
+}
+.first-row {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.tld {
+	position: absolute;
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+	right: 22px;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 13px;
+}
+
+.mint-list {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+}
+
+.mint-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 30px;
+	border-radius: 10px;
+	margin: 10px 15px 20px 15px;
+	font-size: 18px;
+	background : transparent;
+	border: 1px solid #a35453;
+	color: white;
+	min-width: 150px;
+	max-width: fit-content;
+	box-shadow: 0px 0px 2px 3px rgba(255, 255, 255, 0.035);
+}
+
+.mint-vow {
+	font-size: 17px;
+	font-family: 'Quicksand', sans-serif;
+	margin: 5px 6px;
+	padding: 0;
+}
+
+/* Different background-colour for every nth mint-item */
+.mint-item:nth-child(2n) {
+	border-color: rgb(89, 146, 166);
+}
+
+.mint-item:nth-child(3n) {
+	border-color: lightpink;
+}
+
+.mint-item:nth-child(5n) {
+	border-color: rgb(93, 89, 152);
+}
+
+
+.link {
+	color: whitesmoke;
+	margin: 5px 6px;
+	font-size: 20px;
+	font-weight: bolder;
+	text-decoration: none;
+	font-family: 'Didact Gothic', sans-serif;
+}
+
+/* KeyFrames */
+@-webkit-keyframes gradient-animation {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+@-moz-keyframes gradient-animation {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+@keyframes gradient-animation {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
