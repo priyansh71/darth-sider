@@ -5,7 +5,7 @@ const main = async () => {
   
     console.log("Contract deployed to:", domainContract.address);
   
-    let txn = await domainContract.register("priyansh",  {value: hre.ethers.utils.parseEther('0.5')});
+    let txn = await domainContract.register("priyansh",  {value: hre.ethers.utils.parseEther('0.04')});
     await txn.wait();
     console.log("Minted domain priyansh.sith");
   
