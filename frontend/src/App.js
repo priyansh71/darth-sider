@@ -14,7 +14,7 @@ import "./styles/App.css";
 const TWITTER_HANDLE = "priyansh_71";
 const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
 const tld = ".sith";
-const CONTRACT_ADDRESS = "0x2055D308C260D1d7EA348278e2c48f666A18eE48";
+const CONTRACT_ADDRESS = "0xA6f2DdBd8478801D59c61fc67666A80473dEAbBc";
 
 const App = () => {
 
@@ -125,8 +125,8 @@ const App = () => {
 			domain.length === 4 ||
 			domain.length === 5
 		)
-			price = "0.3";
-		else price = "0.1";
+			price = "0.03";
+		else price = "0.01";
 
 		console.log("Minting domain", domain, "with price", price);
 		try {
